@@ -55,7 +55,7 @@ public class OperacionesTest {
     }
     
     //A Mayor Que B.
-    
+    @Ignore
     @Test
     public void testRangoAMayorQueB(){
      
@@ -71,18 +71,20 @@ public class OperacionesTest {
     /**
      * Test of sumRango method, of class Operaciones.
      */
-    @Ignore
+    //A Menor Que B
+    
     @Test
-    public void testSumRango() {
-        System.out.println("sumRango");
-        int a = 0;
-        int b = 0;
-        Operaciones instance = new Operaciones();
-        int expResult = 0;
-        int result = instance.sumRango(a, b);
+    public void testSumRangoAMenorQueB() {
+        
+        int a = 3;
+        int b = 8;
+        
+        int expResult = 33;
+        
+        int result = operaciones.sumRango(a, b);
+        
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
