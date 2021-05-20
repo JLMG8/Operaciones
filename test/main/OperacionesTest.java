@@ -39,8 +39,9 @@ public class OperacionesTest {
     /**
      * Test of rango method, of class Operaciones.
      */
+    //A Menor Que B.
+    @Ignore
     @Test
-    //A menor que B
     public void testRangoAMenorQueB() {
         
         int a = 2;
@@ -51,8 +52,21 @@ public class OperacionesTest {
         int[] result = operaciones.rango(a, b);
         
         assertArrayEquals(expResult, result);
-        
     }
+    
+    //A Mayor Que B.
+    
+    @Test
+    public void testRangoAMayorQueB(){
+     
+        int a = 8, b = 2;
+        
+        int[] expResult = {2,3,4,5,6,7,8};
+        
+        int[] result = operaciones.rango(a, b);
+        
+        assertArrayEquals(expResult, result);
+    }   
 
     /**
      * Test of sumRango method, of class Operaciones.
