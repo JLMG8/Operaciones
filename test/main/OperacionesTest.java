@@ -104,7 +104,7 @@ public class OperacionesTest {
      * Tests of isPar method, of class Operaciones.
      */
     // a es un número par.
-    
+    @Ignore
     @Test
     public void testIsPar() {
         
@@ -114,9 +114,21 @@ public class OperacionesTest {
         
         boolean result = operaciones.isPar(a);
         
-        assertEquals(expResult, result);
-        
+        assertEquals(expResult, result);   
     }
+    // a es un número impar.
+    
+    @Test
+    public void testIsImpar() {
+        
+        int a = 5;
+        
+        boolean expResult = false;
+        
+        boolean result = operaciones.isPar(a);
+        
+        assertEquals(expResult, result);
+    } 
 
     /**
      * Tests of extraerPositivos method, of class Operaciones.
