@@ -72,7 +72,7 @@ public class OperacionesTest {
      * Test of sumRango method, of class Operaciones.
      */
     // A Menor Que B
-    @Ignore
+    
     @Test
     public void testSumRangoAMenorQueB() {
         
@@ -87,7 +87,7 @@ public class OperacionesTest {
         
     }
     // A Mayor Que B
-    
+    @Ignore
     @Test
     public void testSumRangoAMayorQueB() {
         
