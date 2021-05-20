@@ -37,7 +37,7 @@ public class OperacionesTest {
     }
 
     /**
-     * Test of rango method, of class Operaciones.
+     * Tests of rango method, of class Operaciones.
      */
     // A Menor Que B.
     @Ignore
@@ -69,10 +69,10 @@ public class OperacionesTest {
     }   
 
     /**
-     * Test of sumRango method, of class Operaciones.
+     * Tests of sumRango method, of class Operaciones.
      */
     // A Menor Que B
-    
+    @Ignore
     @Test
     public void testSumRangoAMenorQueB() {
         
@@ -101,23 +101,25 @@ public class OperacionesTest {
     }
 
     /**
-     * Test of isPar method, of class Operaciones.
+     * Tests of isPar method, of class Operaciones.
      */
-    @Ignore
+    // a es un número par.
+    
     @Test
     public void testIsPar() {
-        System.out.println("isPar");
-        int a = 0;
-        Operaciones instance = new Operaciones();
-        boolean expResult = false;
-        boolean result = instance.isPar(a);
+        
+        int a = 8;
+        
+        boolean expResult = true;
+        
+        boolean result = operaciones.isPar(a);
+        
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
-     * Test of extraerPositivos method, of class Operaciones.
+     * Tests of extraerPositivos method, of class Operaciones.
      */
     @Ignore
     @Test
