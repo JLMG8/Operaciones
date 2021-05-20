@@ -130,11 +130,20 @@ public class OperacionesTest {
         assertEquals(expResult, result);
     } 
     // a es 0.
-    
+    @Ignore
     @Test(expected = IllegalArgumentException.class)
     public void testIsParAEs0() throws IllegalArgumentException{
         
         int a = 0;
+        
+        boolean result = operaciones.isPar(a);
+    }
+    // a es un número negativo.
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void testIsParAEsNegativo() {
+        
+        int a = -8;
         
         boolean result = operaciones.isPar(a);
     }
