@@ -117,7 +117,7 @@ public class OperacionesTest {
         assertEquals(expResult, result);   
     }
     // a es un número impar.
-    
+    @Ignore
     @Test
     public void testIsImpar() {
         
@@ -129,7 +129,17 @@ public class OperacionesTest {
         
         assertEquals(expResult, result);
     } 
-
+    // a es 0.
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void testIsParAEs0() throws IllegalArgumentException{
+        
+        int a = 0;
+        
+        boolean result = operaciones.isPar(a);
+    }
+    
+    
     /**
      * Tests of extraerPositivos method, of class Operaciones.
      */
