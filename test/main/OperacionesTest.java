@@ -99,6 +99,7 @@ public class OperacionesTest {
         
         assertEquals(expResult, result);
     }
+    
 
     /**
      * Tests of isPar method, of class Operaciones.
@@ -155,14 +156,15 @@ public class OperacionesTest {
     @Ignore
     @Test
     public void testExtraerPositivos() {
-        System.out.println("extraerPositivos");
-        int[] nums = null;
-        Operaciones instance = new Operaciones();
-        int[] expResult = null;
-        int[] result = instance.extraerPositivos(nums);
+        
+        int[] nums = {-3,2,8,4,6,-9,-10};
+        
+        int[] expResult = {2,8,4,6};
+        
+        int[] result = operaciones.extraerPositivos(nums);
+        
         assertArrayEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }
