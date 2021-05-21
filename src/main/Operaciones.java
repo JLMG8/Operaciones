@@ -9,11 +9,11 @@ package main;
  * 
  */
 
-class Operaciones{
+public class Operaciones{
     
     /**
      * Método que recibe dos parámetros enteros y retorna un array con los valores comprendidos entre los dos parámetros.
-     * (Incluyendo los dos parametros).
+     * El array retornado incluye los dos parámetros.
      * @param a valor entero.
      * @param b valor entero.
      * @return int[] retorna un array de enteros. 
@@ -28,7 +28,7 @@ class Operaciones{
     
     /**
      * Método que recibe dos parámetros enteros y retorna un valor entero con la suma de todos los valores que hay entre ambos parámetros.
-     * (Incluyendo los parametros).
+     * suma tambien los parámetros.
      * @param a valor entero.
      * @param b valor entero.
      * @return int retorna un entero.
