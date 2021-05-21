@@ -153,7 +153,8 @@ public class OperacionesTest {
     /**
      * Tests of extraerPositivos method, of class Operaciones.
      */
-    
+    // el array no es nulo.
+    @Ignore
     @Test
     public void testExtraerPositivos() {
         
@@ -167,6 +168,13 @@ public class OperacionesTest {
         
     }
     
+    //El array es nulo.
     
-    
+    @Test(expected = IllegalArgumentException.class)
+    public void testExtraerPositivosNull() {
+        
+        int[] nums = null;
+        
+        int[] result = operaciones.extraerPositivos(nums);       
+    }
 }
