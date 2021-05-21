@@ -140,7 +140,7 @@ public class OperacionesTest {
         boolean result = operaciones.isPar(a);
     }
     // a es un número negativo.
-    
+    @Ignore
     @Test(expected = IllegalArgumentException.class)
     public void testIsParAEsNegativo() {
         
@@ -153,7 +153,7 @@ public class OperacionesTest {
     /**
      * Tests of extraerPositivos method, of class Operaciones.
      */
-    @Ignore
+    
     @Test
     public void testExtraerPositivos() {
         
@@ -166,5 +166,7 @@ public class OperacionesTest {
         assertArrayEquals(expResult, result);
         
     }
+    
+    
     
 }
