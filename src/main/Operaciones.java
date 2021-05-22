@@ -3,12 +3,23 @@ package main;
 
 class Operaciones{
     
-    public int[] rango (int a, int b){
-            int[] nums = new int[b-a];
-            for (int i=a; i<b; i++){
-                    nums[i]=i;
-            }
-            return nums;
+    public int[] rango (int a, int b){       
+        int size = 0;
+        
+        if (b>a){
+            size = (b-a)+1;
+        } else {
+            size = (a-b)+1;
+            a=b;
+        }
+        
+        int[] nums = new int[size];
+        
+        for (int i=0; i<size; i++){
+            nums[i]=a;
+            a += 1;
+        }
+        return nums;
     }
 
     public int sumRango(int a, int b){
