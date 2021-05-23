@@ -169,12 +169,26 @@ public class OperacionesTest {
     }
     
     //El array es nulo.
-    
+    @Ignore
     @Test(expected = IllegalArgumentException.class)
     public void testExtraerPositivosNull() {
         
         int[] nums = null;
         
         int[] result = operaciones.extraerPositivos(nums);       
+    }
+    
+    //El array esta vacio.
+    
+    @Test
+    public void testExtraerPositivosVacio(){
+        
+        int[] nums = {};
+        
+        int[] expResult = {};
+        
+        int[] result = operaciones.extraerPositivos(nums);
+        
+        assertArrayEquals(expResult, result);
     }
 }
