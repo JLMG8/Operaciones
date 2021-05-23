@@ -10,7 +10,6 @@ package main;
  */
 
 public class Operaciones{
-    
     /**
      * Método que recibe dos parámetros enteros y retorna un array con los valores comprendidos entre los dos parámetros.
      * El array retornado incluye los dos parámetros.
@@ -18,12 +17,23 @@ public class Operaciones{
      * @param b valor entero.
      * @return int[] retorna un array de enteros. 
      */
-    public int[] rango (int a, int b){
-            int[] nums = new int[b-a];
-            for (int i=a; i<b; i++){
-                    nums[i]=i;
-            }
-            return nums;
+    public int[] rango (int a, int b){       
+        int size = 0;
+        
+        if (b>a){
+            size = (b-a)+1;
+        } else {
+            size = (a-b)+1;
+            a=b;
+        }
+        
+        int[] nums = new int[size];
+        
+        for (int i=0; i<size; i++){
+            nums[i]=a;
+            a += 1;
+        }
+        return nums;
     }
     
     /**
