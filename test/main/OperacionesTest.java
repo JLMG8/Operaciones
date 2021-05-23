@@ -169,7 +169,7 @@ public class OperacionesTest {
     }
     
     //El array es nulo.
-    
+
     @Test(expected = IllegalArgumentException.class)
     public void testExtraerPositivosNull() {
         
