@@ -64,11 +64,15 @@ public class Operaciones{
      * @param a valor entero.
      * @return Boolean
      */
-    public boolean isPar(int a){
-            if(a%2==0){
-                    return true;
-            }
-            return false;
+    public boolean isPar(int a) throws IllegalArgumentException{
+        if (a <= 0){
+            throw new IllegalArgumentException();
+        }
+        
+        if(a%2==0){
+                return true;
+        }
+        return false;
     }
 
     /**
