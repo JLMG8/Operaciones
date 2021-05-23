@@ -105,7 +105,7 @@ public class OperacionesTest {
      * Tests of isPar method, of class Operaciones.
      */
     // a es un número par.
-    @Ignore
+    
     @Test
     public void testIsPar() {
         
@@ -118,7 +118,7 @@ public class OperacionesTest {
         assertEquals(expResult, result);   
     }
     // a es un número impar.
-    @Ignore
+    
     @Test
     public void testIsImpar() {
         
@@ -131,7 +131,7 @@ public class OperacionesTest {
         assertEquals(expResult, result);
     } 
     // a es 0.
-    @Ignore
+    
     @Test(expected = IllegalArgumentException.class)
     public void testIsParAEs0() throws IllegalArgumentException{
         
@@ -140,7 +140,7 @@ public class OperacionesTest {
         boolean result = operaciones.isPar(a);
     }
     // a es un número negativo.
-    @Ignore
+    
     @Test(expected = IllegalArgumentException.class)
     public void testIsParAEsNegativo() {
         
