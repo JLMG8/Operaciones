@@ -177,4 +177,18 @@ public class OperacionesTest {
         
         int[] result = operaciones.extraerPositivos(nums);       
     }
+    
+    //El array esta vacio.
+    
+    @Test
+    public void testExtraerPositivosVacio(){
+        
+        int[] nums = {};
+        
+        int[] expResult = {};
+        
+        int[] result = operaciones.extraerPositivos(nums);
+        
+        assertArrayEquals(expResult, result);
+    }
 }
