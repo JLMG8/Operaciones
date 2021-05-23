@@ -26,23 +26,27 @@ class Operaciones{
             return false;
     }
 
-    public int[] extraerPositivos(int []nums){
-
-            int n=0;
-            for (int i=0; i<nums.length; i++){
-                    if(nums[i]>0){
-                            n++;
-                    }
+    public int[] extraerPositivos(int []nums) throws IllegalArgumentException{
+        
+        if (nums == null){
+            throw new IllegalArgumentException();
+        }
+        
+        int n=0;
+        for (int i=0; i<nums.length; i++){
+            if(nums[i]>0){
+                n++;
             }
+        }
 
-            int []positivos = new int[n];
-            int j=0;
-            for (int i=0; i<nums.length; i++){
-                    if(nums[i]>0){
-                            positivos[j]=nums[i];
-                            j++;
-                    }
+        int []positivos = new int[n];
+        int j=0;
+        for (int i=0; i<nums.length; i++){
+            if(nums[i]>0){
+                positivos[j]=nums[i];
+                j++;
             }
-            return positivos;
+        }
+        return positivos;
     }
 }
