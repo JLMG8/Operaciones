@@ -45,7 +45,14 @@ public class Operaciones{
      */
     public int sumRango(int a, int b){
             int sum = 0;
-            for (int i=a; i<b; i++){
+            
+            if (a>b){
+                int aux = b;
+                b = a;
+                a = aux;
+            }
+            
+            for (int i=a; i<=b; i++){
                     sum+=i;
             }
             return sum;
