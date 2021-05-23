@@ -63,6 +63,7 @@ public class Operaciones{
      * (True == Par || False == Impar)
      * @param a valor entero.
      * @return Boolean
+     * @throws IllegalArgumentException se genera esta excepción en caso de que el parametro sea menor o igual a 0.
      */
     public boolean isPar(int a) throws IllegalArgumentException{
         if (a <= 0){
@@ -79,6 +80,7 @@ public class Operaciones{
      * Método que recibe un array de enteros como parámetro y retorna otro array de enteros solo con los números positivos que habia en el primero.
      * @param nums Array de enteros.
      * @return int[] Array de enteros.
+     * @throws IllegalArgumentException se genera esta excepción en caso de que el parametro pasado sea null.
      */
     public int[] extraerPositivos(int []nums) throws IllegalArgumentException{
         

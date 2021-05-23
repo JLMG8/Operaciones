@@ -40,7 +40,7 @@ public class OperacionesTest {
      * Tests of rango method, of class Operaciones.
      */
     // A Menor Que B.
-    @Ignore
+    
     @Test
     public void testRangoAMenorQueB() {
         
@@ -55,7 +55,7 @@ public class OperacionesTest {
     }
     
     // A Mayor Que B.
-    @Ignore
+    
     @Test
     public void testRangoAMayorQueB() {
      
@@ -72,7 +72,7 @@ public class OperacionesTest {
      * Tests of sumRango method, of class Operaciones.
      */
     // A Menor Que B
-    @Ignore
+    
     @Test
     public void testSumRangoAMenorQueB() {
         
@@ -87,7 +87,7 @@ public class OperacionesTest {
         
     }
     // A Mayor Que B
-    @Ignore
+   
     @Test
     public void testSumRangoAMayorQueB() {
         
@@ -105,7 +105,7 @@ public class OperacionesTest {
      * Tests of isPar method, of class Operaciones.
      */
     // a es un número par.
-    @Ignore
+    
     @Test
     public void testIsPar() {
         
@@ -118,7 +118,7 @@ public class OperacionesTest {
         assertEquals(expResult, result);   
     }
     // a es un número impar.
-    @Ignore
+    
     @Test
     public void testIsImpar() {
         
@@ -131,7 +131,7 @@ public class OperacionesTest {
         assertEquals(expResult, result);
     } 
     // a es 0.
-    @Ignore
+    
     @Test(expected = IllegalArgumentException.class)
     public void testIsParAEs0() throws IllegalArgumentException{
         
@@ -140,7 +140,7 @@ public class OperacionesTest {
         boolean result = operaciones.isPar(a);
     }
     // a es un número negativo.
-    @Ignore
+
     @Test(expected = IllegalArgumentException.class)
     public void testIsParAEsNegativo() {
         
@@ -154,13 +154,13 @@ public class OperacionesTest {
      * Tests of extraerPositivos method, of class Operaciones.
      */
     // el array no es nulo.
-    @Ignore
+    
     @Test
     public void testExtraerPositivos() {
         
-        int[] nums = {-3,2,8,4,6,-9,-10};
+        int[] nums = {-3,2,8,4,6,-9,-10,-7,100};
         
-        int[] expResult = {2,8,4,6};
+        int[] expResult = {2,8,4,6,100};
         
         int[] result = operaciones.extraerPositivos(nums);
         
@@ -169,7 +169,7 @@ public class OperacionesTest {
     }
     
     //El array es nulo.
-    @Ignore
+    
     @Test(expected = IllegalArgumentException.class)
     public void testExtraerPositivosNull() {
         
